@@ -4,7 +4,7 @@ html { background: #e8f6b8; }
 
 body {
   margin: 0;
-  min-width: 1200px;
+  min-width: 0;
   background: #e8f6b8;
   color: #575757;
   font-family: "SimSun", "宋体", serif;
@@ -157,4 +157,116 @@ footer { margin-top: 26px; }
 
 @media (max-width: 1980px) {
   .hero, footer { margin-left: 0; margin-right: 0; }
+}
+
+@media (max-width: 700px) {
+  body { overflow-x: hidden; }
+
+  .topbar { height: 28px; }
+
+  .nav-inner {
+    width: 100%;
+    height: 28px;
+    padding: 0 8px;
+  }
+
+  .nav-inner a {
+    font-size: 11px;
+    line-height: 28px;
+  }
+
+  .hero, footer {
+    width: 100%;
+  }
+
+  .hero img, footer img {
+    width: 100%;
+    height: auto;
+  }
+
+  .content-frame {
+    width: calc(100% - 20px);
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 1px;
+    background-size: 100% auto;
+  }
+
+  .tips {
+    height: auto;
+    min-height: 0;
+    margin-top: 4px;
+    padding-bottom: 18px;
+  }
+
+  .brands {
+    height: auto;
+    min-height: 0;
+    margin-top: 8px;
+    padding-bottom: 24px;
+  }
+
+  .section-heading {
+    height: 54px;
+    padding-left: 46px;
+  }
+
+  .section-heading h1,
+  .section-heading h2 {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  .ribbon {
+    left: 10px;
+    top: -6px;
+    width: 28px;
+    height: 58px;
+    border-width: 1px;
+  }
+
+  .tips-copy {
+    padding: 2px 14px 0;
+    font-size: 13px;
+    line-height: 1.48;
+  }
+
+  .tips-copy br { display: none; }
+
+  .brand-bar {
+    width: calc(100% - 22px);
+    height: 25px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 22px;
+    padding-left: 30px;
+  }
+
+  .brand-bar b {
+    right: 8px;
+    top: -1px;
+    font-size: 30px;
+    line-height: 23px;
+  }
+
+  .brand-grid {
+    width: calc(100% - 18px);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 8px;
+    row-gap: 18px;
+  }
+
+  .brand-grid img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 322 / 221;
+    border-width: 3px;
+    margin-bottom: 7px;
+  }
+
+  .brand-grid figcaption {
+    font-size: 10px;
+  }
+
+  footer { margin-top: 12px; }
 }
